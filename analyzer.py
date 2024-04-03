@@ -6,6 +6,7 @@ from langchain_openai import ChatOpenAI  # This is correct for using LangChain w
 # Load environment variables
 load_dotenv()
 
+
 # Ensure API key is present
 api_key = os.getenv('OAKEY')
 if not api_key:
