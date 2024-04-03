@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Accessibility Test Page</title>
+</head>
+
+<body>
+    <img src="image.jpg"> <!-- Missing alt attribute -->
+    <p style="color: grey; background-color: white;">Low contrast text</p> <!-- Low contrast -->
+    <a href="javascript:void(0);">Click here</a> <!-- Non-descriptive link text -->
+    <input type="text" name="name"> <!-- Form input without label -->
+    <div onclick="alert('More Info');">More Info</div> <!-- Non-accessible interactive element -->
+    <h1>Page Title</h1>
+    <h3>Subsection Heading</h3> <!-- Skipping heading levels -->
+</body>
+
+</html>
