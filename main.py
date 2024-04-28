@@ -78,6 +78,18 @@ class AccessibilityProcessor:
         self.save_html(changes_summary, "changes_summary.html")  # Save the summary of changes as HTML
         print("Changes Summary:", changes_summary)
 
+        # Add to the bottom of your existing AccessibilityProcessor class
+
+    def process_html_file(file_path):
+        processor = AccessibilityProcessor(file_path)
+        processor.initialize_agents()
+        processor.load_and_parse_html()
+        processor.analyze_html()
+        changes_summary = processor.summarize_changes()
+        processor.save_html(processor.updated_html, "updated_page.html")
+        return changes_summary, processor.updated_html
+
+
 if __name__ == "__main__":
     file_path = '/Users/williammisiaszek/Code/AApp/back-end/venv/sample.html'
     processor = AccessibilityProcessor(file_path)
